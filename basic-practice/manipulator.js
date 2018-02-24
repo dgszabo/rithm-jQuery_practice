@@ -16,9 +16,12 @@ $(document).ready(function() {
     var apology = $('<p>').text('We apologize for the existence of this list. We are deeply troubled that it was ever displayed on our otherwise impecable website.');
     $('aside').append(apology);
     // 7
-
+    $('input').on('change', function() {
+        var red = $('input:first').val();
+        var green = $('input:first').parent().next().children().eq(0).val();
+        var blue = $('input:last').val();
+        $('body').css('background-color', 'rgb(' + red + ', ' + green + ', ' + blue + ')');
+    });
     // 8
-
-    // 9
 
 });
