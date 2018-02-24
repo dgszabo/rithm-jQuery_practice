@@ -23,5 +23,8 @@ $(document).ready(function() {
         $('body').css('background-color', 'rgb(' + red + ', ' + green + ', ' + blue + ')');
     });
     // 8
+    $('img').on('click', function(event) {
+        $(event.target).remove();
+    });
 
 });
