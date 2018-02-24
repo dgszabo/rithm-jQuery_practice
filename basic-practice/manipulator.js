@@ -11,4 +11,14 @@ $(document).ready(function() {
     // 5
     var newListElement = $('<li>').text('whatever you want');
     $('ol').append(newListElement);
+    // 6
+    $('aside').empty();
+    var apology = $('<p>').text('We apologize for the existence of this list. We are deeply troubled that it was ever displayed on our otherwise impecable website.');
+    $('aside').append(apology);
+    // 7
+
+    // 8
+
+    // 9
+
 });
